@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Etch A Sketch</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Etch A Sketch</h1>
+        <div id="grid-container"></div>
+
+
+        <div id="function-container">
+            <div id="size-setting-container" class="button-container">
+                <input type="text" id="size-input" placeholder="Enter number 4 - 100"/>
+                <button id="size-submit-button">Change Grid Size</button>
+            </div>
+            
+            <div id="mode-selector" class="button-container">
+                <button id="pen-mode-button">Pen Mode</button>
+                <button id="eraser-mode-button">Eraser Mode</button>
+            </div>
+
+            <div id="clear-all-container" class="button-container">
+                <button id="clear-all-button">Clear All</button>
+            </div>
+        </div>
+
+        <div id="color-selector-container">
+            <button id="red-color" class="round-button" title="red"></button>
+            <button id="blue-color" class="round-button" title="blue"></button>
+            <button id="green-color" class="round-button" title="green"></button>
+            <button id="black-color" class="round-button" title="black"></button>
+            <button id="random-color" class="round-button" title="random color"></button>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

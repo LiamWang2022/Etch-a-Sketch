@@ -1,0 +1,110 @@
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid-container {
+    width: min(60dvw,60dvh);
+    height: min(60dvw,60dvh);
+    border: 1px solid darkslategray;
+    justify-self: self-start;
+    /* transform: translateY(-5dvh); */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-cell {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#function-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color:darkslategray;
+    border-radius: 10px;
+}
+
+.button-container {
+    margin: 1dvw;
+}
+
+#size-setting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mode-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#color-selector-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1dvw;
+}
+.round-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+#red-color {
+    background-color: red;
+}
+#blue-color {
+    background-color: blue;
+}
+#green-color {
+    background-color: green;
+}
+#black-color {
+    background-color: black;
+}
+#random-color {
+    background: linear-gradient(
+        135deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        indigo,
+        violet,
+        magenta,
+        hotpink
+      );
+}
+
+button:hover, input:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
